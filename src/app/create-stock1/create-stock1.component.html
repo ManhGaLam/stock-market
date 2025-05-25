@@ -1,0 +1,36 @@
+<div class="form-container">
+  <h2>Create Stock Form</h2>
+
+  <form [formGroup]="stockForm" (ngSubmit)="createStock()">
+    
+    <label for="name">Stock Name:</label>
+    <input type="text" id="name" formControlName="name" />
+    <div>
+      <small *ngIf="f['name']?.errors?.['required']" class="error">Name is required.</small>
+      <small *ngIf="f['name']?.errors?.['minlength']" class="error">Minimum 3 characters required.</small>
+    </div>
+
+    <label for="code">Stock Code:</label>
+    <input type="text" id="code" formControlName="code" />
+    <div>
+      <small *ngIf="f['code']?.errors?.['required']" class="error">Code is required.</small>
+    </div>
+
+    <label for="price">Stock Price:</label>
+    <input type="number" id="price" formControlName="price" />
+    <div>
+      <small *ngIf="f['price']?.errors?.['required']" class="error">Price is required.</small>
+      <small *ngIf="f['price']?.errors?.['min']" class="error">Price must be greater than 0.</small>
+    </div>
+
+    <div class="check">
+      <input type="checkbox" formControlName="confirm" />
+      <span>I confirm that the information provided above is accurate!</span>
+    </div>
+
+    <button type="submit" [disabled]="stockForm.invalid">Create</button>
+  </form>
+
+  <p>Form control value: {{ stockForm.value | json }}</p>
+  <p>Form control status: {{ stockForm.status | json }}</p>
+</div>

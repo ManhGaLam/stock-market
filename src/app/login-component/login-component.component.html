@@ -1,0 +1,17 @@
+<h2>Đăng Nhập</h2>
+
+<div class="input-group">
+  <input type="text" [(ngModel)]="username" placeholder="Tên đăng nhập" required>
+  <p *ngIf="submitted && !username" class="error">⚠ Vui lòng nhập tên đăng nhập</p>
+</div>
+
+<div class="input-group">
+  <input type="password" [(ngModel)]="password" placeholder="Mật khẩu" required>
+  <p *ngIf="submitted && !password" class="error">⚠ Vui lòng nhập mật khẩu</p>
+</div>
+
+<button (click)="login()">Đăng Nhập</button>
+
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+<p>Bạn chưa có tài khoản? <a routerLink="/register">Đăng ký ngay</a></p>

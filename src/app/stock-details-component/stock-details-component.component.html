@@ -1,0 +1,28 @@
+<body>
+  <h2>Stock Details</h2>
+
+<div *ngIf="stock" class="stock-details">
+  <p><strong>ID:</strong> {{ stock.id }}</p>
+  <p><strong>Stock name:</strong> {{ stock.name }}</p>
+  <p><strong>Price:</strong> {{ stock.price }} $</p>
+  <p><strong>Favorite:</strong> {{ stock.favorite ? 'Yes' : 'No' }}</p>
+
+  <button (click)="deleteStock()">Delete</button>
+  <button (click)="toggleEdit()">Update</button>
+  <button (click)="goBack()">Back</button>
+
+  <div *ngIf="isEditing">
+    <h3>Update</h3>
+    <label>Stock name: <input [(ngModel)]="updatedStock.name"></label><br>
+    <label>Price: <input type="number" [(ngModel)]="updatedStock.price"></label><br>
+    <label>
+      Favorite:
+      <input type="checkbox" [(ngModel)]="updatedStock.favorite">
+    </label><br>
+
+    <button (click)="saveUpdate()">Save</button>
+    <button (click)="toggleEdit()">Cancel</button>
+  </div>
+
+</div>
+</body>

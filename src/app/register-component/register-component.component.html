@@ -1,0 +1,7 @@
+<h2>Đăng Ký</h2>
+<form (ngSubmit)="register()">
+  <input type="text" [(ngModel)]="username" name="username" placeholder="Tên đăng nhập" required>
+  <input type="password" [(ngModel)]="password" name="password" placeholder="Mật khẩu" required>
+  <button type="submit">Đăng Ký</button>
+</form>
+<p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>

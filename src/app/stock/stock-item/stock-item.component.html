@@ -1,0 +1,12 @@
+<div class="stock-item">
+  <a [routerLink]="['/stocks', stock.id]">{{ stock.name }}</a>
+  <button (click)="toggleFavorite()">Favorite</button>
+  <button (click)="deleteStock()">Delete</button>
+  <button (click)="toggleEdit()">Update</button>
+
+  <div *ngIf="isEditing">
+    <input [(ngModel)]="updatedStock.name" />
+    <input [(ngModel)]="updatedStock.price" type="number" />
+    <button (click)="saveUpdate()">Save</button>
+  </div>
+</div>

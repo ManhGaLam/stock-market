@@ -1,0 +1,140 @@
+{
+  "stocks": [
+    {
+      "id": "1",
+      "name": "Test Stock Company",
+      "code": "TSC",
+      "price": 10,
+      "previousPrice": 80,
+      "exchange": "NASDAQ",
+      "favorite": true
+    },
+    {
+      "id": "2",
+      "name": "Second Stock Company",
+      "code": "SSC",
+      "price": 135,
+      "previousPrice": 20,
+      "exchange": "NSE",
+      "favorite": true
+    },
+    {
+      "id": "3",
+      "name": "Last Stock Company",
+      "code": "LSC",
+      "price": 100,
+      "previousPrice": 765,
+      "exchange": "NYSE",
+      "favorite": true
+    },
+    {
+      "id": "5",
+      "name": "New Stock",
+      "code": "OKX",
+      "price": 12,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": false
+    },
+    {
+      "id": "11d0",
+      "name": "New Stock 3",
+      "code": "10000",
+      "price": 100,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": true,
+      "isPositiveChange": true
+    },
+    {
+      "id": "7c9c",
+      "name": "New Stock 1000",
+      "code": "okx",
+      "price": 100,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": true,
+      "isPositiveChange": true
+    },
+    {
+      "id": "6874",
+      "name": "New Stock 3",
+      "code": "umk",
+      "price": 111,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": true,
+      "isPositiveChange": true
+    },
+    {
+      "id": "b58c",
+      "name": "New Stock 4",
+      "code": "aaa",
+      "price": 14,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": false,
+      "isPositiveChange": true
+    },
+    {
+      "id": "1684",
+      "name": "New Stock 2",
+      "code": "hom",
+      "price": 244,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": true,
+      "isPositiveChange": true
+    },
+    {
+      "id": "54dd",
+      "name": "New Stock 6",
+      "code": "iop",
+      "price": 1222,
+      "previousPrice": 0,
+      "exchange": "",
+      "favorite": false,
+      "isPositiveChange": true
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "password": "password123"
+    },
+    {
+      "id": "1743233491530",
+      "username": "user2",
+      "password": "123"
+    },
+    {
+      "id": "1743234105330",
+      "username": "user",
+      "password": "123"
+    },
+    {
+      "id": "1743235315482",
+      "username": "user4",
+      "password": "123"
+    },
+    {
+      "id": "1743840211082",
+      "username": "admin4",
+      "password": "123"
+    },
+    {
+      "id": "1744440931214",
+      "username": "manh1234",
+      "password": "manh12345"
+    }
+  ]
+}

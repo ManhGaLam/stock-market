@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Vùng chứa danh sách stock */
+.stock-container {
+  display: flex;
+  flex-wrap: wrap;  /* Cho phép xuống dòng nếu không đủ chỗ */
+  justify-content: center; /* Căn giữa các item */
+  gap: 15px; /* Khoảng cách giữa các item */
+  max-width: 80%;
+  margin: auto;
+}
+
+app-stock-list {
+  width: 100%;
+  text-align: center;
+}
+
+/* Card của stock */
+app-stock-item {
+  flex: 1 1 200px;
+  max-width: 250px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Vùng chứa form tạo stock */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa các form */
+  width: 100%;
+}
+
+/* Định dạng chung cho cả CreateStock và CreateStock1 */
+app-create-stock, app-create-stock1 {
+  width: 50%; /* Chiều rộng cố định */
+  max-width: 400px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+}
+

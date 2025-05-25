@@ -1,0 +1,22 @@
+<h2>Danh sách cổ phiếu</h2>
+
+<input
+  type="text"
+  [(ngModel)]="searchQuery"
+  (input)="searchStocks()"
+  placeholder="Tìm kiếm cổ phiếu..."
+/>
+
+<ul>
+  <li *ngFor="let stock of filteredStocks">
+    <a [routerLink]="['/stocks', stock.id]">
+      {{ stock.name }} - Price:
+      <span
+        [class.positive]="stock.price >= stock.previousPrice"
+        [class.negative]="stock.price < stock.previousPrice"
+      >
+        $ {{ stock.price }}</span
+      >
+    </a>
+  </li>
+</ul>
